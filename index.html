@@ -421,8 +421,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <script src="js/jquery-3.4.1.min.js"></script>
 
-<script src="js/pixi.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.1/TweenMax.min.js"></script>
+    <script src="js/pixi.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.1/TweenMax.min.js"></script>
 
 
     <!-- include plugin src -->
@@ -443,25 +443,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script src="js/main5.js"></script>
     <script src="js/custom.js"></script>
 
-<script>
-    $(window).on('load',function(){setTimeout(()=>$('#loader').addClass('loader-hide'),2000);});
-    $( function() {
-        if (window.innerWidth > 800) {
-            // init plugin
-            NodeCursor({
-                cursor : true, // enable cursor
-                node : true, // enable node
-                cursor_velocity : 1, // cursor velocity : 1 = default w1 = slower, >1 = faster
-                node_velocity : 0.35, // cursor velocity : 1 = default w1 = slower, >1 = faster
-                native_cursor : 'none', // default,  grab, pointer ( all cursor's css properties)
-                element_to_hover : '.nodeHover', // // element that will trigger cursor anime on hover :  'disable', or any element : 'a', '.class', '#id'
-                cursor_class_hover : 'disable', // 'disable', or any class name (without dot) - ex : expand, reduce relative to your css
-                node_class_hover : 'expand', // 'disable', or any class name  (without dot) - ex : expand, reduce relative to your css
-                hide_mode : false, // hide node and cursor if inactive
-            });
+    <script>
+        $(window).on('load',function(){setTimeout(()=>$('#loader').addClass('loader-hide'),2000);});
+        $( function() {
+            if (window.innerWidth > 800) {
+                // init plugin
+                NodeCursor({
+                    cursor : true, // enable cursor
+                    node : true, // enable node
+                    cursor_velocity : 1, // cursor velocity : 1 = default w1 = slower, >1 = faster
+                    node_velocity : 0.35, // cursor velocity : 1 = default w1 = slower, >1 = faster
+                    native_cursor : 'none', // default,  grab, pointer ( all cursor's css properties)
+                    element_to_hover : '.nodeHover', // // element that will trigger cursor anime on hover :  'disable', or any element : 'a', '.class', '#id'
+                    cursor_class_hover : 'disable', // 'disable', or any class name (without dot) - ex : expand, reduce relative to your css
+                    node_class_hover : 'expand', // 'disable', or any class name  (without dot) - ex : expand, reduce relative to your css
+                    hide_mode : false, // hide node and cursor if inactive
+                });
 
-        }});
-</script>
+            }});
+    </script>
 
 </body>
 </html>
